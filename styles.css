@@ -1,0 +1,72 @@
+/* ============================================
+   PASO 4: Regla agregada al PRINCIPIO
+   Selector más específico → gana sobre "p"
+   ============================================ */
+body p {
+    color: green;
+}
+
+/* ============================================
+   Estilos generales del Blog de Conciertos
+   ============================================ */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1a1a1a;
+    /* PASO 2: !important en color blanco (línea 3 del bloque) */
+    color: white !important;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    background-color: #222;
+    border-left: 4px solid #ffcc00;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* PASO 3: Selector de etiqueta p → más específico que body */
+p {
+    color: blue;
+}
+
+footer {
+    background-color: #111;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ============================================
+   PASO 1: Regla agregada al FINAL
+   La cascada aplica la última declaración
+   ============================================ */
+body {
+    color: red;
+}
